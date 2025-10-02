@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Integração Numérica - Regra de Simpson</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+<body>
+  <h1>Integração Numérica com a Regra de Simpson</h1>
+  <p>Integral: <b>∫₀^{π/2} sin²(x) dx</b> — valor exato: π/4</p>
+
+  <div class="controls">
+    <button id="btnCalcular">Calcular e Plotar</button>
+  </div>
+
+  <pre id="output" class="output"></pre>
+  <div id="chart" class="chart"></div>
+
+  <details class="note">
+    <summary>Fórmula (Simpson composto)</summary>
+    <code>∫ₐᵇ f(x) dx ≈ (h/3)[f(x₀)+f(xₙ)+4∑ f(x_impar)+2∑ f(x_par)], h=(b-a)/n, n par.</code>
+  </details>
+
+  <script src="script.js"></script>
+</body>
+</html>
